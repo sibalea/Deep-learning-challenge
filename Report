@@ -1,0 +1,35 @@
+The report is a summary of the performance of the deep learning model we created for Alphabet Soup.
+
+
+    Data Preprocessing
+        What variable(s) are the target(s) for your model?
+        What variable(s) are the features for your model?
+        What variable(s) should be removed from the input data because they are neither targets nor features? IDs with non binary data
+
+        
+Compiling, Training, and Evaluating the Model
+
+    Model Architecture:
+    The neural network consists of:
+
+        Input Layer:  input_dim=43, meaning the model receives 43 features as input.
+
+        First Hidden Layer: 80 neurons with ReLU activation.
+
+        Second Hidden Layer: 30 neurons with ReLU activation.
+
+        Output Layer: 1 neuron with sigmoid activation for binary classification.
+
+        Total Layers: 3 layers (2 hidden layers and 1 output layer).
+
+        Neurons: 80 neurons in the first hidden layer, 30 neurons in the second hidden layer, and 1 neuron in the output layer.
+
+        . Activation Functions:
+            ReLU (Rectified Linear Unit) is used for the hidden layers.
+            Sigmoid is used for the output layer to output values between 0 and 1, indicated for binary classification.
+
+    Achieving Target Model Performance (75%):
+    Whether this model can achieve the 75% performance target depends on multiple factors such as:
+        Data Quality: If the data is clean, balanced, and properly preprocessed, the model can potentially reach or exceed 75%.
+        Training Process: Proper optimization and tuning (e.g., using the Adam optimizer, learning rate adjustments, and dropout for regularization) will affect model performance.
+        Hyperparameters: Tuning the number of neurons or layers, changing activation functions, or using different batch sizes may improve the results.
