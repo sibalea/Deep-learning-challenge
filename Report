@@ -33,3 +33,14 @@ Compiling, Training, and Evaluating the Model
         Data Quality: If the data is clean, balanced, and properly preprocessed, the model can potentially reach or exceed 75%.
         Training Process: Proper optimization and tuning (e.g., using the Adam optimizer, learning rate adjustments, and dropout for regularization) will affect model performance.
         Hyperparameters: Tuning the number of neurons or layers, changing activation functions, or using different batch sizes may improve the results.
+
+To optimize the model,
+First, we created more hidden layers up to 4. We also decrease features from 43 to 40, via 42.
+
+2nd, we tried numerous epochs from 100 to 700 then back to 50.
+
+3rd, we adjust the learning rate from 0.1 to 0.01, then 0.0001 to allow more learning time.
+
+4th, we use Adam optimizer, then Nadam. We even tried embbeding.
+
+None of these optimization changes increased the accuracy above 74% . Actullay, with the increase hidden layers and units change, we notice a decrease in accuracy.
